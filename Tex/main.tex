@@ -1,0 +1,70 @@
+\documentclass[12pt,a4j,book]{jlreq}
+%\usepackage[dvipdfmx]{graphicx}
+\input{Tex/localpackages}
+
+\begin{document}
+        
+    \thispagestyle{empty}
+    \begin{center}
+    修士論文/ 課題研究報告書\\% どちらか一方を消してください．
+    \vfill
+    〇〇〇〇〇題目〇〇〇〇〇\\
+    \vfill
+    〇〇著者名〇〇\\
+    \vfill
+    主指導教員  〇〇 〇〇\\
+    \vfill
+    北陸先端科学技術大学院大学\\
+    先端科学技術研究科\\
+    （〇〇〇〇）\\ %取得希望学位
+    \vfill
+    令和〇〇年〇月\\ % 学位授与年月
+    \vfill
+    \end{center}
+    \clearpage
+    \centerline{Abstract}
+    〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇
+    \clearpage
+    \tableofcontents\thispagestyle{empty}%目次
+    \listoffigures\thispagestyle{empty}%図の目次
+    \listoftables\thispagestyle{empty}%表の目次
+    \clearpage
+    
+    \chapter{はじめに}
+    
+    % 〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇\cite{ref1,ref2}
+    \chapter{関連研究}
+    \section{セクション名}
+    \subsection{サブセクション名}
+    〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇
+    \chapter{提案手法}
+    % 〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇 (図 \ref{fig1})
+    
+    % \begin{figure}
+    % \centerline{\includegraphics[clip,width=90mm]{boltzmann.jpg}}
+    % \caption{図のキャプション}\label{fig1}
+    % \end{figure}
+    \chapter{実験・評価}
+    \begin{table}
+    \centering
+    \begin{tabular}{r|rr}
+    & a & b\\ \hline
+    1& 0.25 & 0.33\\
+    2& 0.75 & 0.66\\
+    \end{tabular}
+    \caption{表のキャプション}\label{table1}
+    \end{table}
+    \chapter{おわりに}
+    
+    % \renewcommand{\bibname}{参考文献}
+    % \begin{thebibliography}{99}
+    % \bibitem{ref1} 著者名．本のタイトル，出版社 (出版年)
+    % \bibitem{ref2} 著者1 and 著者2. 論文タイトル, 学会名, pp.zz--ww (2007)
+    % \bibitem{ref3} 著者１, 著者2, and 著者3. 論文タイトル，ジャーナル名，vol.xx, no.yy, pp.zz--ww (2003)
+    % \end{thebibliography}
+\bibliographystyle{unsrt} % 参考文献出力のスタイル
+\bibliography{reference} % 拡張子を外したbibファイル
+
+
+    
+\end{document}
