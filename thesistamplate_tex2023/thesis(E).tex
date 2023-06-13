@@ -1,0 +1,61 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[dvipdfmx]{graphicx}
+
+\begin{document}
+\thispagestyle{empty}
+\begin{center}
+Master's Thesis/ Master's Research Project Report\\% Erase either one of them
+\vfill
+Title\\
+\vfill
+Your Name\\
+\vfill
+Supervisor  XXXX YYYY\\
+\vfill
+Graduate School of Advanced Science and Technology\\ % Or, School of Information Science
+Japan Advanced Institute of Science and Technology\\
+(ZZZZZ)\\ % intended degree
+\vfill
+Month, Year\\ % conferment month/year
+\vfill
+\end{center}
+\clearpage
+\begin{abstract}
+Your abstract here.
+\end{abstract}
+\tableofcontents\thispagestyle{empty}
+\listoffigures\thispagestyle{empty}
+\listoftables\thispagestyle{empty}
+
+\setcounter{page}{0}
+\chapter{Introduction}
+\chapter{Related Works}
+\section{Section Title}
+\subsection{Subsection Title}
+xxxxxxxxxxxxxxxxxxxxx\cite{ref1,ref3}
+\chapter{Proposed Model}
+xxxxxxxxxxxxxxxxxxx (Figure \ref{fig1})
+\begin{figure}
+\centerline{\includegraphics[clip,width=90mm]{boltzmann.jpg}}
+\caption{Caption of the figure}\label{fig1}
+\end{figure}
+\chapter{Experimentation}
+\chapter{Evaluation}
+\begin{table}
+\centering
+\begin{tabular}{r|rr}
+& a & b\\ \hline
+1& 0.25 & 0.33\\
+2& 0.75 & 0.66\\
+\end{tabular}
+\caption{Caption of the table}\label{table1}
+\end{table}
+\chapter{Conclusion}
+%\include{my_chapters}
+
+\begin{thebibliography}{99}
+\bibitem{ref1} Author. \textit{Book Title}, Publisher, (year)
+\bibitem{ref2} Author1 and Author2. Paper Title, \textit{Proceedings Title}, pp. zz--ww (year)
+\bibitem{ref3} Author1, Author2, and Author3. Paper Title, \textit{Journal Title}, vol.xx, no.yy, pp.zz--ww (year)
+\end{thebibliography}
+\end{document}
