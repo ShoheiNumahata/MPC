@@ -176,3 +176,6 @@ out/main.lot
 out/main.synctex.gz
 out/main.toc
 out/main.pdf
+document/~$as-form1.docx
+.gitignore
+document/~$as-form2.docx
